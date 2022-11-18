@@ -1,0 +1,4 @@
+Today's active power sum: 2520597
+Today's active energy min: 100358904
+Today's active energy max: 112923304
+graph path: C:\Users\alfre\Documents\Python\ML\sunai\results/data_plantas_python_2/power.png
