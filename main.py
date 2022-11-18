@@ -36,6 +36,7 @@ for file in xlsx_files:
     sns.lineplot(x="fecha_im", y="active_power_im", hue='id_i', data=power)
     graph_path = f"results/{file['file_name']}/power.png"
     plt.savefig(graph_path)
+    plt.close()
 
     with open(f"results/{file['file_name']}/{file['file_name']}.txt", 'w') as output_txt:
         output_txt.write(f"Today's active power sum: {power['active_power_im'].sum()}\nToday's active energy min: {energy['active_energy_im'].min()}\nToday's active energy max: {energy['active_energy_im'].max()}\ngraph path: {os.getcwd()}\\{graph_path}")
